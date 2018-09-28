@@ -41,7 +41,7 @@ def html_page_context(app, pagename, templatename, context, doctree):
 
 
 def setup(app):
-    app.add_config_value('edit_on_github_project', '', True)
+    app.add_config_value('edit_on_github_project', '69853419/hahahaha', True)
     app.add_config_value('edit_on_github_branch', 'master', True)
-    app.add_config_value('edit_on_github_src_path', '', True)  # 'eg' "docs/"
+    app.add_config_value('edit_on_github_src_path', 'docs/', True)  # 'eg' "docs/"
     app.connect('html-page-context', html_page_context)
