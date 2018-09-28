@@ -34,14 +34,14 @@ def html_page_context(app, pagename, templatename, context, doctree):
         return
     path = os.path.relpath(doctree.get('source'), app.builder.srcdir)
     show_url = get_github_url(app, 'blob', path)
-    edit_url = get_github_url(app, 'edit', path)
+    edit_url = get_github_url(app, 'blob', path) #原文blob处为edit
 
     context['show_on_github_url'] = show_url
     context['edit_on_github_url'] = edit_url
 
 
 def setup(app):
-    app.add_config_value('edit_on_github_project', '69853419/hahahaha', True)
+    app.add_config_value('edit_on_github_project', '', True)
     app.add_config_value('edit_on_github_branch', 'master', True)
-    app.add_config_value('edit_on_github_src_path', 'docs/', True)  # 'eg' "docs/"
+    app.add_config_value('edit_on_github_src_path', 'source/', True)  # 'eg' "docs/"
     app.connect('html-page-context', html_page_context)
