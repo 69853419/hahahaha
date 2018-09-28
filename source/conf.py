@@ -64,8 +64,11 @@ html_static_path = ['_static']
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'shiwei\'s document'
 
-html_theme_options = {
-    'display_version': False}
+html_context = {
+"display_github": False, # Add 'Edit on Github' link instead of 'View page source'
+"last_updated": True,
+"commit": False,
+}
 
 # -- Options for LaTeX output ---------------------------------------------
 
