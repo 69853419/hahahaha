@@ -133,4 +133,4 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 _exts = "../exts"
-sys.path.append(os.path.abspath(_exts))
+sys.path.insert(0, os.path.abspath(_exts))
