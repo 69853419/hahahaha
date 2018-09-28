@@ -32,6 +32,7 @@ extensions = ['edit_on_github', 'chinese_search']
 
 edit_on_github_project = '69853419/hahahaha'
 edit_on_github_branch = 'master'
+edit_on_github_src = 'docs/'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
