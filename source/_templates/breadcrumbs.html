@@ -1,0 +1,17 @@
+{%- extends "sphinx_rtd_theme/breadcrumbs.html" %}
+
+{% block breadcrumbs_aside %}
+
+<ul class="this-page-menu">
+  <h3>{{ _('This Page') }}</h3>
+  {%- if show_on_github_url %}
+  <li><a href="{{ show_on_github_url }}"
+           rel="nofollow">{{ _('Show on GitHub') }}</a></li>
+  {%- endif %}
+  {%- if edit_on_github_url %}
+    <li><a href="{{ edit_on_github_url }}"
+           rel="nofollow">{{ _('Edit on GitHub') }}</a></li>
+  {%- endif %}
+</ul>
+
+{% endblock %}
