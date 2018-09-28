@@ -28,11 +28,8 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['edit_on_github', 'chinese_search']
+extensions = ['chinese_search']
 
-edit_on_github_project = '69853419/hahahaha'
-edit_on_github_branch = 'master'
-edit_on_github_src = 'docs/'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
